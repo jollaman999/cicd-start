@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# 볼륨 새성 (volume name : cloud-cicd-src)
+# 볼륨 생성 (volume name : cloud-cicd-src)
 docker volume create  \
---opt device="G:/cicd/cloud-cicd/src" \
+--opt device="G:/git/cicd-start/IDE" \
 --opt o=bind --opt type=none cloud-cicd-src
 
 docker volume create  \
